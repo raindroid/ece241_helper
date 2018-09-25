@@ -1,5 +1,8 @@
 # Help ECE241
-## TruthTable
+## TruthTable (Python)
+~ represents NOT
++ / | represents OR
+* / & represents AND
 Generate simple TruthTable from Logic expression
 - Example:
 ```python
