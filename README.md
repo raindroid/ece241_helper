@@ -1,8 +1,8 @@
 # Help ECE241
 ## TruthTable (Python)
-1. ~ represents NOT
-2. + / | represents OR
-3. * / & represents AND
+1. '~' represents NOT
+2. '+' / '|' represents OR
+3. '*' / '&' represents AND
 Generate simple TruthTable from Logic expression
 - Example:
 ```python
