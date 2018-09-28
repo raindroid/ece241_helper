@@ -24,10 +24,10 @@ class LogicSignal(object):
     def __mul__(self, other):
         """
             AND operation
-            >>> t1 = LogicSignal(1)
+            >>> t1 = LogicSignal()
             >>> t2 = LogicSignal(1)
-            >>> (t1 + t2).get_signal()
-            1
+            >>> (t1 * t2).get_signal()
+            0
         """
         if not isinstance(other, LogicSignal):
             raise Exception("Type Error!")
@@ -50,7 +50,7 @@ class LogicSignal(object):
             OR operation
             >>> t1 = LogicSignal(1)
             >>> t2 = LogicSignal(0)
-            >>> (t1 * t2).get_signal()
+            >>> (t1 + t2).get_signal()
             1
         """
         if not isinstance(other, LogicSignal):
