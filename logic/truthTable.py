@@ -39,4 +39,7 @@ def print_table(table : list):
 
 if __name__ == '__main__':
     #Test Case: a mux
-    print_table(exps_to_table(lambda a,b,s: a * ~s + b * s))
+    # print_table(exps_to_table(lambda a,b,s: a * ~s + b * s))
+
+    print_table(exps_to_table(lambda a0, a1, a2, a3: (a0%a1)&(a2%a3)|a0&a1&~a2&~a3|~a0&~a1&a2&a3))
+    pass

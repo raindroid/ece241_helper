@@ -81,6 +81,17 @@ class LogicSignal(object):
         ans = LogicSignal(1 - self.__sig)
         return ans
 
+    def __mod__(self, other):
+        """
+            XOR gate
+            >>> t1 = LogicSignal()
+            >>> t2 = LogicSignal(1)
+            >>> t1 % t2
+            1
+        """
+        if self.__sig == other.__sig:
+            return LogicSignal(0)
+        return LogicSignal(1)
 
 if __name__ == '__main__':
     a = LogicSignal()
